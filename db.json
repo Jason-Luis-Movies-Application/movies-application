@@ -6,7 +6,7 @@
       "id": 1
     },
     {
-      "title": "Justice League",
+      "title": "Superman",
       "rating": "5",
       "id": 2
     },
@@ -14,6 +14,16 @@
       "title": "Batman vs Superman",
       "rating": "4",
       "id": 3
+    },
+    {
+      "title": "spiderman",
+      "rating": "5",
+      "id": 4
+    },
+    {
+      "title": "spody",
+      "rating": "2",
+      "id": 5
     }
   ]
 }
