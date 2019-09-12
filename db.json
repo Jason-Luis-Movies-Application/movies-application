@@ -1,18 +1,18 @@
 {
   "movies": [
     {
-      "title": "Casablanca",
+      "title": "Batman",
       "rating": "4",
       "id": 1
     },
     {
-      "title": "Star Wars: A New Hope",
+      "title": "Justice League",
       "rating": "5",
       "id": 2
     },
     {
-      "title": "Forrest Gump",
-      "rating": "5",
+      "title": "Batman vs Superman",
+      "rating": "4",
       "id": 3
     }
   ]
