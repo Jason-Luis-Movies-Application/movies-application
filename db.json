@@ -1,18 +1,12 @@
 {
   "movies": [
     {
-      "title": "Batman",
-      "rating": "4",
       "id": 1
     },
     {
-      "title": "Batman vs Superman",
-      "rating": "4",
       "id": 3
     },
     {
-      "title": "spiderman",
-      "rating": "5",
       "id": 4
     },
     {
