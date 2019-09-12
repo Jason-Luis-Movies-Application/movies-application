@@ -6,11 +6,6 @@
       "id": 1
     },
     {
-      "title": "Superman",
-      "rating": "5",
-      "id": 2
-    },
-    {
       "title": "Batman vs Superman",
       "rating": "4",
       "id": 3
@@ -21,7 +16,7 @@
       "id": 4
     },
     {
-      "title": "spody",
+      "title": "Freddie vs Jason",
       "rating": "2",
       "id": 5
     }
