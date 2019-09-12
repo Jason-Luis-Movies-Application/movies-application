@@ -1,4 +1,4 @@
-const {getMovies,deleteMovie} = require('./api.js');
+const {getMovies,deleteMovie, editMovie} = require('./api.js');
 function buildHTML () {
   getMovies().then((movies) => {
     $('#title').html('MOVIES');
@@ -7,7 +7,7 @@ function buildHTML () {
       $('#loading').remove();
       $('body').css('background-color', 'white');
       $('.container').css('visibility', 'visible');
-      $('#movieDisplay').append(`<ul><li>ID: ${id}</li><li>Title: ${title}</li><li>Rating: ${rating}</li><button type="button" class="editButton">Edit</button> / <button type="button" class="deleteButton" id="${id}Delete">Delete</button></ul>`);
+      $('#movieDisplay').append(`<ul><li>ID: ${id}</li><li>Title: ${title}</li><li>Rating: ${rating}</li><button type="button" class="editButton" id="${id}Edit">Edit</button> / <button type="button" class="deleteButton" id="${id}Delete">Delete</button></ul>`);
     });
     editMovieInfo();
     deleteMovieInfo();
@@ -20,25 +20,28 @@ function buildHTML () {
 function updateMovies() {
   buildHTML();
 }
+// EDIT MOVIE
+const editMovieInfo = function() {
+  $('.editButton').click(function () {
+    let idNum = parseInt($(this).attr("id"));
+    console.log($(this));
+    editMovie(idNum);
+  });
+};
+
+// DELETE MOVIE
+  const deleteMovieInfo = function () {
+    $('.deleteButton').click(function () {
+      let idNum = parseInt($(this).attr("id"));
+      console.log($(this));
+      deleteMovie(idNum);
+    });
+    setTimeout(updateMovies, 500);
+  };
+
 // ADD MOVIE
   let submitButton = document.querySelector('#submit');
   submitButton.addEventListener('click', addMovie);
-
-const editMovieInfo = function() {
-  $('.editButton').click(function () {
-
-  });
-};
-
-
-const deleteMovieInfo = function() {
-  $('.deleteButton').click(function() {
-    let idNum = parseInt($(this).attr("id"));
-    console.log($(this));
-    deleteMovie(idNum);
-  });
-  setTimeout(updateMovies, 500);
-};
 
   function addMovie(e) {
     e.preventDefault();
@@ -47,5 +50,6 @@ const deleteMovieInfo = function() {
     let data = {title: movie, rating: rating};
     fetch('/api/movies', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)});
     setTimeout(updateMovies, 500);
-}
-buildHTML();
+  }
+
+  buildHTML();
