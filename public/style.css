@@ -3,19 +3,32 @@ html, body {
 }
 body {
     background-color: black;
+    font-family: 'Permanent Marker', cursive;
+    background-size: cover;
+    color: white;
 }
 .container {
     visibility: hidden;
 }
 #loading {
-    /*display: block;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*width: 50%;*/
     display: flex;
     justify-content: center;
     visibility: visible;
 }
 header {
     font-size: 5em;
+    text-shadow: 7px 7px black;
+}
+#title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bangers', cursive;
+}
+#movieDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+}
+label {
+    color: black;
 }

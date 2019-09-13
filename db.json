@@ -1,24 +1,34 @@
 {
   "movies": [
     {
-      "title": "spiderman",
+      "title": "Iron Man 3",
       "rating": "5",
-      "id": 9
+      "genre": "Action",
+      "id": 1
     },
     {
-      "title": "Iron Man",
-      "rating": "4",
-      "id": 10
+      "title": "Spanish Hulk2",
+      "rating": "1",
+      "genre": "Action",
+      "id": 2
     },
     {
-      "title": "Hulk",
+      "title": "Dr. Strangest",
       "rating": "3",
-      "id": 11
+      "genre": "Drama",
+      "id": 3
     },
     {
-      "title": "Dr. Strange",
-      "rating": "4",
-      "id": 12
+      "title": "Thor",
+      "rating": "5",
+      "genre": "Action",
+      "id": 4
+    },
+    {
+      "title": "",
+      "rating": "",
+      "genre": "",
+      "id": 5
     }
   ]
 }
