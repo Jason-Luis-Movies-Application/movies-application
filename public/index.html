@@ -4,25 +4,25 @@
     <meta charset="UTF-8" />
     <title>My Application</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
 <div class="container">
-<header id="title"></header>
+    <header id="title"></header>
 <div id="loading"><img src="red.gif"></div>
 <div id="movieDisplay"></div>
 <br>
-<h2>Add your movie below</h2>
+<h2 id="userAddTitle">Add your movie below</h2>
 <div id="userInput">
-<input id ="movieTitle" class="form-control" type="text" placeholder="Enter movie title">
-<br>
-<input id ="movieRating" class="form-control" type="text" placeholder="Enter movie rating">
-<br>
-<input id ="movieGenre" class="form-control" type="text" placeholder="Enter movie genre">
-<br>
-    <button id="submit" type="button" class="btn btn-danger btn-lg btn-block">Submit</button>
-<br>
+    <input id ="movieTitle" class="form-control" type="text" placeholder="Enter movie title">
+    <br>
+    <input id ="movieRating" class="form-control" type="text" placeholder="Enter movie rating">
+    <br>
+    <input id ="movieGenre" class="form-control" type="text" placeholder="Enter movie genre">
+    <br>
+    <button id="submit" type="button" class="btn btn-outline-light btn-lg btn-block">Submit</button>
+    <br>
     <div class="modal fade" tabindex="-1" role="dialog" id="modal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">

@@ -6,9 +6,9 @@ function buildHTML () {
       $("#movieDisplay").html("");
       movies.forEach(({title, rating, genre, id}) => {
         $('#loading').remove();
-        $('body').css('background-image', "url('./red-city.jpg')");
+        $('body').css('background-image', "url('./city-bg.jpg')");
         $('.container').css('visibility', 'visible');
-        $('#movieDisplay').append(`<ul><li>ID: ${id}</li><li>Title: ${title}</li><li>Rating: ${rating}</li><li>Genre: ${genre}</li><button type="button" class="editButton" id="${id}Edit">Edit</button> / <button type="button" class="deleteButton" id="${id}Delete">Delete</button></ul>`);
+        $('#movieDisplay').append(`<ul><li id="listTitle"><h2>${title}</h2></li><li><h4>${genre}</h4></li><li><h6>Rating: ${rating}</h6></li><button type="button" class="editButton btn btn-outline-warning mr-3" id="${id}Edit">Edit</button><button type="button" class="deleteButton btn btn-outline-danger" id="${id}Delete">Delete</button></ul>`);
       });
       editMovieButton();
       deleteMovieInfo();
@@ -16,7 +16,7 @@ function buildHTML () {
       alert('Oh no! Something went wrong.\nCheck the console for details.');
       console.log(error);
     });
-  },4000);
+  },500);
 }
 
 function updateMovies() {
