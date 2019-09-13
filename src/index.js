@@ -70,8 +70,23 @@ const editMovieButton = function() {
       console.log(movie);
     $('#modal').modal('show');
     $('.modal-title').text(`Your selected movie is: ` + `${movie.title}`);
-      $('#body-title').text(`Movie:  ` + `${movie.title}`);
-      $('#body-rating').text(`Rating:  ` + `${movie.rating}`);
-    })
+      $('#body-title').val(`${movie.title}`);
+      $('#body-rating').val(`${movie.rating}`);
+      $("#save").click(function(){
+        let idNum = movie.id;
+        let title = document.getElementById('body-title').value;
+        let rating = document.getElementById('body-rating').value;
+        editMovie(idNum, title, rating);
+        $('#modal').modal('hide');
+      });
+    });
   });
 };
+
+// $("#save").click(function(){
+//   let idNum = parseInt($('.editButton').attr("id"));
+//   let movie = document.getElementById('body-title').value;
+//   let rating = document.getElementById('body-rating').value;
+//   editMovie(idNum, movie, rating);
+//   $('#modal').modal('hide');
+// });
