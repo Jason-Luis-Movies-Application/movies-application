@@ -18,10 +18,11 @@ module.exports = {
   },
   // EDIT MOVIE
 
-  editMovie: (id, title, rating) => {
+  editMovie: (id, title, rating, genre) => {
     const movie = {
       title: title,
       rating: rating,
+      genre: genre
     };
     const url = `/api/movies/${id}`;
     const options = {

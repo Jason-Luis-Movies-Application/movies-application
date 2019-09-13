@@ -4,37 +4,43 @@
     <meta charset="UTF-8" />
     <title>My Application</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
 <div class="container">
 <header id="title"></header>
-<div id="loading"><img src="loading.gif"></div>
+<div id="loading"><img src="red.gif"></div>
 <div id="movieDisplay"></div>
 <br>
 <h2>Add your movie below</h2>
 <div id="userInput">
-<input id ="movieTitle" class="form-control" type="text" placeholder="Type movie title here">
+<input id ="movieTitle" class="form-control" type="text" placeholder="Enter movie title">
 <br>
-<input id ="movieRating" class="form-control" type="text" placeholder="Type movie rating here">
+<input id ="movieRating" class="form-control" type="text" placeholder="Enter movie rating">
 <br>
-<button id="submit" type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+<input id ="movieGenre" class="form-control" type="text" placeholder="Enter movie genre">
 <br>
-    <div class="modal" tabindex="-1" role="dialog" id="modal">
+    <button id="submit" type="button" class="btn btn-danger btn-lg btn-block">Submit</button>
+<br>
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title">Movie</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <label for="body-title">Movie Title:</label>
+                    <label for="body-title">Movie Title: </label>
                     <input type="text" id="body-title">
                     <br>
-                    <label for="body-rating">Movie Rating:</label>
+                    <label for="body-rating">Movie Rating: </label>
                     <input type="text" id="body-rating">
+                    <br>
+                    <label for="body-genre">Movie Genre: </label>
+                    <input type="text" id="body-genre">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
