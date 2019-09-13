@@ -3,6 +3,8 @@ module.exports = {
     return fetch('/api/movies')
         .then(response => response.json());
   },
+  // DELETE MOVIE
+
   deleteMovie: (id) => {
     const movie = {id: id};
     const options = {
@@ -14,6 +16,8 @@ module.exports = {
     };
     return fetch(`/api/movies/${id}`, options)
   },
+  // EDIT MOVIE
+
   editMovie: (id, title, rating) => {
     const movie = {
       title: title,
@@ -28,5 +32,5 @@ module.exports = {
       body: JSON.stringify(movie)
     };
     return fetch(`/api/movies/${id}`, options)
-  },
+  }
 };
