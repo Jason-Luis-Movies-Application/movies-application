@@ -3,8 +3,11 @@ html, body {
 }
 body {
     background-color: black;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Raleway', sans-serif;
     background-size: cover;
+    background-attachment: fixed;
+}
+header {
     color: white;
 }
 .container {
@@ -17,12 +20,13 @@ body {
 }
 header {
     font-size: 5em;
-    text-shadow: 7px 7px black;
+    text-shadow: 6px 6px black;
 }
 #title {
     display: flex;
     justify-content: center;
-    font-family: 'Bangers', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bold;
 }
 #movieDisplay {
     display: flex;
@@ -31,4 +35,23 @@ header {
 }
 label {
     color: black;
+}
+card {
+    color: black !important;
+    display: flex;
+    justify-content: space-between;
+}
+#userAddTitle {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+ul {
+    color: white;
+    list-style: none;
+}
+#listTitle {
+    font-weight: bold;
+    font-style: italic;
+
 }

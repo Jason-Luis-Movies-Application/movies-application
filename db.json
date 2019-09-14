@@ -7,7 +7,7 @@
       "id": 1
     },
     {
-      "title": "Spanish Hulk2",
+      "title": "Spanish Hulk 2",
       "rating": "1",
       "genre": "Action",
       "id": 2
@@ -20,15 +20,21 @@
     },
     {
       "title": "Thor",
-      "rating": "5",
-      "genre": "Action",
+      "rating": "Action",
+      "genre": "5",
       "id": 4
     },
     {
-      "title": "",
-      "rating": "",
-      "genre": "",
+      "title": "Spiderman",
+      "rating": "6",
+      "genre": "Action",
       "id": 5
+    },
+    {
+      "title": "Joker",
+      "rating": "10",
+      "genre": "Action",
+      "id": 6
     }
   ]
 }
