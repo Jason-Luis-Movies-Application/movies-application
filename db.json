@@ -35,6 +35,12 @@
       "rating": "10",
       "genre": "Action",
       "id": 6
+    },
+    {
+      "title": "Mother Dearest",
+      "rating": "5",
+      "genre": "drama",
+      "id": 7
     }
   ]
 }
