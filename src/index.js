@@ -14,7 +14,6 @@ function buildHTML () {
       deleteMovieInfo();
     }).catch((error) => {
       alert('Oh no! Something went wrong.\nCheck the console for details.');
-      console.log(error);
     });
   },500);
 }
@@ -22,7 +21,6 @@ function buildHTML () {
 function updateMovies() {
   buildHTML();
 }
-
 
 // ====================== ADD MOVIE FUNCTIONALITY =========================
   let submitButton = document.querySelector('#submit');
@@ -33,13 +31,13 @@ function updateMovies() {
     let movie = document.getElementById('movieTitle').value;
     let rating = document.getElementById('movieRating').value;
     let genre = document.getElementById('movieGenre').value;
-
     let data = {title: movie, rating: rating, genre: genre};
+    $('#userInput').children('input').val('');
     fetch('/api/movies', {method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(data)
     });
-    setTimeout(updateMovies, 500);
+    setTimeout(updateMovies, 100);
   }
   buildHTML();
 
@@ -50,7 +48,7 @@ function updateMovies() {
       console.log(idNum);
       deleteMovie(idNum);
     });
-    setTimeout(updateMovies, 500);
+    setTimeout(updateMovies, 100);
   };
 
 // =========================== EDIT FUNCTIONALITY ================================
